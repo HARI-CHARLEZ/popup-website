@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1fc749962b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+<!-----button--------->
+        <div class="btn2" >
+            <button class="open" onclick="opencontent()">click</button>
+        </div>
+        <h3 class="back">Click here to know about this website</h3>
+        <div class="content" id="content">
+            <i class="fa-solid fa-check"></i>
+                <h1>Thank you</h1>
+                <h3>In  this website have Nothing and useless<br>Created by CHARLEZ😂😂</h3>
+                <button class="btn" onclick="closecontent()">close</button>
+        </div>
+        <!-----background----->
+        <div class="bg">
+            <div id="back">
+              <h1>Welcome to website Nothing <br>In this website have Nothing features</h1>
+              
+            </div>
+        </div>
+    </div>
+<script>
+    let popup=document.getElementById("content");
+    function opencontent(){
+     popup.classList.add("opencontent");       
+    }
+
+    function closecontent(){
+        popup.classList.remove("opencontent");       
+       }
+</script>
+</body>
+</html>

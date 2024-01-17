@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&family=Ubuntu:wght@700&display=swap" rel="stylesheet');
+.container{
+    width:100%;
+    height:100vh;
+    font-family: poppins,sans-serif;
+    background-image:url(wallpaper.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+
+/*----background----*/
+
+
+#back{
+    text-align: center;
+    position: absolute;
+    top: 05%;
+    left: 30%;
+    background:linear-gradient(rgba(65, 154, 192, 0.345),rgba(0, 0, 0, 0.445));
+    border-radius: 10px;
+    padding: 10px;
+    color:white;
+}
+
+.back{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    color: black;
+}
+/*----button----*/
+.content{
+    position: absolute;
+    top:0;
+    left: 50%;
+    background:whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility:hidden;
+}
+
+.opencontent{
+    top: 50%;
+    visibility:visible;
+    transform: translate(-50%,-50%) scale(1);
+    transition:transform 0.4s,0.3s; 
+}
+i{
+    background: green;
+    border-radius: 50%;
+    padding:10px;
+    font-size:50px 50px;
+}
+
+.btn{
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right:10px; 
+    font-size: 20px;
+    background: rgba(4, 4, 96, 0.774);
+    color: white;
+}
+
+.btn:hover{
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.open{
+    border-radius: 20px;
+    background: rgba(4, 4, 96, 0.774);
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top:45%;
+    left: 047%;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: poppins,sans-serif;
+}
+
+/*--------small screen--------*/
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        background-image: url(wall.jpg);
+    }
+    #back{
+        font-size: 8px;
+        position: absolute;
+        left: 50px;
+   }
+   .back{
+    font-size: 14px;
+    position: absolute;
+    left:80px;
+   }
+
+   .open{
+    position: absolute;
+    left: 170px;
+    font-size: 20px;
+   }
+   .content{
+    font-size:10px;
+   }
+
+  
+}
